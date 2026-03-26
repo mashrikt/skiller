@@ -367,13 +367,16 @@ pub async fn fetch_repo_skills(repo: &CommunityRepo) -> Result<Vec<CommunitySkil
         let installed = skills_dir.join(&dir_name).join("SKILL.md").exists();
         let source_url = entry.html_url.unwrap_or_default();
 
-        // Use the GitHub API URL for the directory, append /SKILL.md
+        // Build the SKILL.md download URL from the directory's API URL.
         // entry.url is like: https://api.github.com/repos/owner/repo/contents/skills/name?ref=main
-        // We use the repo.url (parent) + /dir_name/SKILL.md for the API fetch
+        // We must strip the ?ref=... query param before appending /SKILL.md
         let download_url = entry
             .url
             .as_ref()
-            .map(|url| format!("{}/SKILL.md", url.trim_end_matches('/')))
+            .map(|url| {
+                let base = url.split('?').next().unwrap_or(url);
+                format!("{}/SKILL.md", base.trim_end_matches('/'))
+            })
             .ok_or_else(|| format!("Missing GitHub API URL for {}", dir_name))?;
         validate_skill_content_url(&download_url)?;
 
