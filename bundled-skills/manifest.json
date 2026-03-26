@@ -1,0 +1,905 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design",
+      "description": "Create distinctive, production-grade frontend interfaces avoiding generic AI aesthetics. Works with React, Tailwind, HTML/CSS.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["frontend", "ui", "css", "design", "web"]
+    },
+    {
+      "id": "web-artifacts-builder",
+      "name": "Web Artifacts Builder",
+      "description": "Build complex claude.ai HTML artifacts using React 18, Tailwind CSS, and shadcn/ui components with state management.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["artifacts", "react", "tailwind", "shadcn"]
+    },
+    {
+      "id": "canvas-design",
+      "name": "Canvas Design",
+      "description": "Design beautiful visual art in PNG and PDF formats using design philosophy principles for posters and artwork.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["design", "canvas", "visual-art", "png", "creative"]
+    },
+    {
+      "id": "algorithmic-art",
+      "name": "Algorithmic Art",
+      "description": "Create generative art using p5.js with seeded randomness, flow fields, and particle systems as interactive HTML artifacts.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["generative-art", "p5js", "creative-coding", "visualization"]
+    },
+    {
+      "id": "theme-factory",
+      "name": "Theme Factory",
+      "description": "Style artifacts with 10 pre-set professional themes or generate custom themes for slides, docs, and landing pages.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["themes", "styling", "branding", "design-system"]
+    },
+    {
+      "id": "brand-guidelines",
+      "name": "Brand Guidelines",
+      "description": "Apply official brand colors and typography for consistent corporate visual styling across all artifacts.",
+      "category": "frontend",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["branding", "typography", "colors", "corporate"]
+    },
+    {
+      "id": "mcp-builder",
+      "name": "MCP Builder",
+      "description": "Guide for creating high-quality MCP servers enabling LLMs to interact with external services via Python or TypeScript.",
+      "category": "development",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["mcp", "api", "server", "integration"]
+    },
+    {
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "description": "Interactive tool for creating new skills, running evals, benchmarking performance, and optimizing skill descriptions.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["skills", "meta", "evaluation", "authoring"]
+    },
+    {
+      "id": "webapp-testing",
+      "name": "Webapp Testing",
+      "description": "Test local web applications using Playwright for UI verification, functional testing, screenshots, and browser logs.",
+      "category": "testing",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["playwright", "testing", "browser", "e2e"]
+    },
+    {
+      "id": "claude-api",
+      "name": "Claude API Developer",
+      "description": "Build apps with the Claude API or Anthropic SDK. Activates when code imports anthropic or claude_agent_sdk.",
+      "category": "ai",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["api", "sdk", "anthropic", "claude"]
+    },
+    {
+      "id": "docx",
+      "name": "Word Document Handler",
+      "description": "Create, read, edit, and manipulate Word documents with tracked changes, comments, formatting, and headers/footers.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["documents", "word", "docx", "office"]
+    },
+    {
+      "id": "pdf",
+      "name": "PDF Toolkit",
+      "description": "PDF manipulation: text/table extraction, merge/split, rotate, watermarks, form filling, encryption, and OCR.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["pdf", "documents", "extraction", "ocr"]
+    },
+    {
+      "id": "xlsx",
+      "name": "Excel Spreadsheets",
+      "description": "Create, edit, and analyze Excel spreadsheets with formulas, formatting, charting, and data cleaning across xlsx/csv/tsv.",
+      "category": "data",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["spreadsheets", "excel", "csv", "data-analysis"]
+    },
+    {
+      "id": "pptx",
+      "name": "PowerPoint Presentations",
+      "description": "Create, edit, and analyze PowerPoint presentations with layouts, templates, charts, and automated slide generation.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["presentations", "powerpoint", "slides", "office"]
+    },
+    {
+      "id": "doc-coauthoring",
+      "name": "Document Co-Authoring",
+      "description": "Structured workflow for co-authoring documentation, proposals, and technical specs through context gathering and refinement.",
+      "category": "documentation",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["documentation", "writing", "collaboration", "specs"]
+    },
+    {
+      "id": "internal-comms",
+      "name": "Internal Communications",
+      "description": "Write internal comms: 3P updates, newsletters, FAQ responses, status reports, and incident reports in standard formats.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["communications", "writing", "reports", "business"]
+    },
+    {
+      "id": "slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "description": "Create animated GIFs optimized for Slack's size constraints with validation tools and animation concepts.",
+      "category": "productivity",
+      "source": "https://github.com/anthropics/skills",
+      "author": "anthropics",
+      "tags": ["gif", "slack", "animation", "messaging"]
+    },
+    {
+      "id": "test-driven-development",
+      "name": "Test Driven Development",
+      "description": "Enforces RED-GREEN-REFACTOR TDD cycle with architecturally enforced context isolation using separate subagents.",
+      "category": "testing",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["tdd", "testing", "red-green-refactor", "methodology"]
+    },
+    {
+      "id": "systematic-debugging",
+      "name": "Systematic Debugging",
+      "description": "4-phase root cause analysis methodology. Prevents premature fix attempts through structured investigation.",
+      "category": "debugging",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["debugging", "root-cause", "troubleshooting", "analysis"]
+    },
+    {
+      "id": "brainstorming",
+      "name": "Brainstorming",
+      "description": "Transform rough ideas into fully-formed designs through structured Socratic questioning and design exploration.",
+      "category": "productivity",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["ideation", "design", "planning", "socratic"]
+    },
+    {
+      "id": "writing-plans",
+      "name": "Writing Implementation Plans",
+      "description": "Creates detailed implementation plans with bite-sized tasks, clear ordering, and dependency tracking.",
+      "category": "productivity",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["planning", "project-management", "tasks", "workflow"]
+    },
+    {
+      "id": "dispatching-parallel-agents",
+      "name": "Dispatching Parallel Agents",
+      "description": "Enables concurrent subagent workflows by dispatching multiple Claude agents to work on tasks in parallel.",
+      "category": "ai",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["agents", "parallel", "concurrency", "orchestration"]
+    },
+    {
+      "id": "subagent-driven-development",
+      "name": "Subagent-Driven Development",
+      "description": "Two-stage development review where subagents check spec compliance then code quality for autonomous development.",
+      "category": "development",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["agents", "code-review", "quality", "automation"]
+    },
+    {
+      "id": "verification-before-completion",
+      "name": "Verification Before Completion",
+      "description": "Requires fresh verification evidence before any completion claim. Prevents false positives in task completion.",
+      "category": "code-quality",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["verification", "quality", "testing"]
+    },
+    {
+      "id": "using-git-worktrees",
+      "name": "Using Git Worktrees",
+      "description": "Manage isolated parallel development branches using git worktrees for concurrent feature work.",
+      "category": "git",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["git", "worktrees", "branches", "parallel"]
+    },
+    {
+      "id": "finishing-a-development-branch",
+      "name": "Finishing a Development Branch",
+      "description": "Guides completion of development work by presenting clear options for merge, PR, or further iteration.",
+      "category": "git",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["git", "merge", "pull-request", "workflow"]
+    },
+    {
+      "id": "root-cause-tracing",
+      "name": "Root Cause Tracing",
+      "description": "Traces errors deep in execution back to their origin for systematic debugging of complex issues.",
+      "category": "debugging",
+      "source": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "tags": ["debugging", "tracing", "errors", "diagnosis"]
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "name": "React Best Practices",
+      "description": "65 React/Next.js performance optimization rules from Vercel Engineering covering rendering and data fetching.",
+      "category": "code-quality",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "author": "vercel",
+      "tags": ["react", "nextjs", "performance", "optimization"]
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "Web Design Guidelines",
+      "description": "Audits UI code against 100+ accessibility and UX rules from Vercel's design system.",
+      "category": "frontend",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "author": "vercel",
+      "tags": ["accessibility", "ux", "audit", "a11y"]
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "name": "Composition Patterns",
+      "description": "React composition patterns for avoiding boolean prop proliferation and improving component architecture.",
+      "category": "code-quality",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "author": "vercel",
+      "tags": ["react", "composition", "architecture", "patterns"]
+    },
+    {
+      "id": "static-analysis",
+      "name": "Static Analysis Security",
+      "description": "Static analysis toolkit with CodeQL, Semgrep, and SARIF parsing for automated vulnerability detection.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["security", "codeql", "semgrep", "static-analysis"]
+    },
+    {
+      "id": "variant-analysis",
+      "name": "Variant Analysis",
+      "description": "Discover similar vulnerabilities across codebases by analyzing known vulnerability patterns and finding variants.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["security", "vulnerability", "analysis", "patterns"]
+    },
+    {
+      "id": "semgrep-rule-creator",
+      "name": "Semgrep Rule Creator",
+      "description": "Develop and refine custom Semgrep rules for vulnerability detection with test validation and iterative improvement.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["semgrep", "security", "rules", "detection"]
+    },
+    {
+      "id": "differential-review",
+      "name": "Differential Security Review",
+      "description": "Security-focused analysis of code changes using git history to identify newly introduced vulnerabilities in PRs.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["security", "code-review", "git", "diff"]
+    },
+    {
+      "id": "building-secure-contracts",
+      "name": "Building Secure Contracts",
+      "description": "Smart contract security toolkit with vulnerability scanners for 6 blockchains based on Trail of Bits research.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["blockchain", "smart-contracts", "security", "web3"]
+    },
+    {
+      "id": "property-based-testing",
+      "name": "Property-Based Testing",
+      "description": "Property-based testing guidance across multiple languages. Define invariants, generate test cases exploring edge cases.",
+      "category": "testing",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["testing", "property-based", "fuzzing", "invariants"]
+    },
+    {
+      "id": "modern-python",
+      "name": "Modern Python Tooling",
+      "description": "Python development with modern tooling: uv for packages, ruff for linting/formatting, pytest for testing.",
+      "category": "development",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["python", "uv", "ruff", "pytest"]
+    },
+    {
+      "id": "yara-authoring",
+      "name": "YARA Rule Authoring",
+      "description": "YARA rule development with linting, atom analysis, and best practices for malware detection signatures.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["yara", "malware", "detection", "forensics"]
+    },
+    {
+      "id": "insecure-defaults",
+      "name": "Insecure Defaults Detector",
+      "description": "Detect insecure configurations, hardcoded credentials, and fail-open patterns that lead to vulnerabilities.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["security", "configuration", "credentials", "hardening"]
+    },
+    {
+      "id": "supply-chain-risk-auditor",
+      "name": "Supply Chain Risk Auditor",
+      "description": "Examine dependency threat landscapes to identify supply chain risks in project dependencies and packages.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["supply-chain", "dependencies", "security", "risk"]
+    },
+    {
+      "id": "git-cleanup",
+      "name": "Git Cleanup",
+      "description": "Safely clean up git worktrees and local branches with gated confirmation workflow to prevent accidents.",
+      "category": "git",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["git", "cleanup", "branches", "worktrees"]
+    },
+    {
+      "id": "devcontainer-setup",
+      "name": "Dev Container Setup",
+      "description": "Create pre-configured devcontainers with Claude Code and language-specific tooling for reproducible environments.",
+      "category": "devops",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["devcontainer", "docker", "environment", "setup"]
+    },
+    {
+      "id": "second-opinion",
+      "name": "Second Opinion",
+      "description": "Run code reviews using external LLM CLIs (Gemini, Codex) on changes and diffs for a second perspective.",
+      "category": "code-quality",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["code-review", "multi-llm", "diffs", "quality"]
+    },
+    {
+      "id": "firebase-apk-scanner",
+      "name": "Firebase APK Scanner",
+      "description": "Scan Android APKs for Firebase misconfigurations that could expose sensitive data or allow unauthorized access.",
+      "category": "security",
+      "source": "https://github.com/trailofbits/skills",
+      "author": "trailofbits",
+      "tags": ["firebase", "android", "security", "mobile"]
+    },
+    {
+      "id": "ffuf-web-fuzzing",
+      "name": "FFUF Web Fuzzing",
+      "description": "Expert guidance for ffuf web fuzzing during penetration testing with authenticated fuzzing and wordlist selection.",
+      "category": "security",
+      "source": "https://github.com/jthack/ffuf_claude_skill",
+      "author": "jthack",
+      "tags": ["fuzzing", "pentesting", "security", "ffuf"]
+    },
+    {
+      "id": "threat-hunting-sigma",
+      "name": "Threat Hunting with Sigma Rules",
+      "description": "Use Sigma detection rules to hunt for threats and analyze security events in log data.",
+      "category": "security",
+      "source": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+      "author": "jthack",
+      "tags": ["sigma", "threat-hunting", "security", "detection"]
+    },
+    {
+      "id": "ios-simulator",
+      "name": "iOS Simulator Automation",
+      "description": "Production-ready iOS app testing with 21 scripts providing semantic navigation to interact with simulator elements.",
+      "category": "testing",
+      "source": "https://github.com/conorluddy/ios-simulator-skill",
+      "author": "conorluddy",
+      "tags": ["ios", "simulator", "testing", "mobile"]
+    },
+    {
+      "id": "playwright-automation",
+      "name": "Playwright Browser Automation",
+      "description": "Autonomously write and execute custom Playwright browser automation code for testing and multi-step workflows.",
+      "category": "testing",
+      "source": "https://github.com/lackeyjb/playwright-skill",
+      "author": "lackeyjb",
+      "tags": ["playwright", "browser", "automation", "e2e"]
+    },
+    {
+      "id": "d3js-visualizations",
+      "name": "D3.js Visualizations",
+      "description": "Create interactive data visualizations using D3.js library — charts, graphs, and visual data representations.",
+      "category": "data",
+      "source": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "author": "chrisvoncsefalvay",
+      "tags": ["d3js", "visualization", "charts", "data"]
+    },
+    {
+      "id": "web-asset-generator",
+      "name": "Web Asset Generator",
+      "description": "Generate production-ready favicons, PWA/app icons, and social media images from logos with accessibility validation.",
+      "category": "frontend",
+      "source": "https://github.com/alonw0/web-asset-generator",
+      "author": "alonw0",
+      "tags": ["favicon", "icons", "assets", "pwa"]
+    },
+    {
+      "id": "frontend-slides",
+      "name": "Frontend Slides",
+      "description": "Create animation-rich HTML presentations from scratch or by converting PowerPoint files to web format.",
+      "category": "frontend",
+      "source": "https://github.com/zarazhangrui/frontend-slides",
+      "author": "zarazhangrui",
+      "tags": ["presentations", "slides", "html", "animations"]
+    },
+    {
+      "id": "csv-data-summarizer",
+      "name": "CSV Data Summarizer",
+      "description": "Automatically analyze CSV files and generate comprehensive insights with statistical summaries and visualizations.",
+      "category": "data",
+      "source": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+      "author": "coffeefuelbump",
+      "tags": ["csv", "data-analysis", "visualization", "insights"]
+    },
+    {
+      "id": "epub-converter",
+      "name": "Markdown to EPUB Converter",
+      "description": "Convert markdown documents, chat summaries, or research reports into downloadable EPUB files for Kindle.",
+      "category": "productivity",
+      "source": "https://github.com/smerchek/claude-epub-skill",
+      "author": "smerchek",
+      "tags": ["epub", "kindle", "markdown", "conversion"]
+    },
+    {
+      "id": "youtube-transcript",
+      "name": "YouTube Transcript",
+      "description": "Fetch transcripts from YouTube videos and prepare summaries or analysis from the content.",
+      "category": "data",
+      "source": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "author": "michalparkola",
+      "tags": ["youtube", "transcript", "video", "summary"]
+    },
+    {
+      "id": "last30days-research",
+      "name": "Last 30 Days Research",
+      "description": "Research any topic across Reddit, X, YouTube, HN, Polymarket, and web with strict 30-day recency window.",
+      "category": "ai",
+      "source": "https://github.com/mvanhorn/last30days-skill",
+      "author": "mvanhorn",
+      "tags": ["research", "social-media", "trends", "synthesis"]
+    },
+    {
+      "id": "terraform-skill",
+      "name": "Terraform Skill",
+      "description": "Terraform and OpenTofu covering testing strategies, module patterns, CI/CD workflows, and production-ready IaC.",
+      "category": "devops",
+      "source": "https://github.com/antonbabenko/terraform-skill",
+      "author": "antonbabenko",
+      "tags": ["terraform", "opentofu", "infrastructure", "devops"]
+    },
+    {
+      "id": "github-pr-workflow",
+      "name": "GitHub PR Workflow",
+      "description": "Create quality pull requests with conventional commits, structured descriptions, and proper review processes.",
+      "category": "git",
+      "source": "https://github.com/Gentleman-Programming/Gentleman-Skills",
+      "author": "Gentleman-Programming",
+      "tags": ["github", "pull-requests", "conventional-commits", "git"]
+    },
+    {
+      "id": "angular-core",
+      "name": "Angular Core Patterns",
+      "description": "Angular development with standalone components, signals, inject function, and zoneless change detection.",
+      "category": "frontend",
+      "source": "https://github.com/Gentleman-Programming/Gentleman-Skills",
+      "author": "Gentleman-Programming",
+      "tags": ["angular", "signals", "standalone", "typescript"]
+    },
+    {
+      "id": "react-19-patterns",
+      "name": "React 19 Patterns",
+      "description": "React 19 development patterns with React Compiler support, modern hooks, server components, and optimization.",
+      "category": "frontend",
+      "source": "https://github.com/Gentleman-Programming/Gentleman-Skills",
+      "author": "Gentleman-Programming",
+      "tags": ["react", "react-19", "hooks", "compiler"]
+    },
+    {
+      "id": "tailwind-theme-builder",
+      "name": "Tailwind Theme Builder",
+      "description": "Build custom Tailwind CSS themes with design tokens, color palettes, typography scales, and spacing systems.",
+      "category": "frontend",
+      "source": "https://github.com/jezweb/claude-skills",
+      "author": "jezweb",
+      "tags": ["tailwind", "themes", "css", "design-tokens"]
+    },
+    {
+      "id": "project-health",
+      "name": "Project Health Check",
+      "description": "Analyze project health: code quality, dependency freshness, test coverage, and documentation completeness.",
+      "category": "code-quality",
+      "source": "https://github.com/jezweb/claude-skills",
+      "author": "jezweb",
+      "tags": ["health-check", "quality", "audit", "metrics"]
+    },
+    {
+      "id": "deep-research",
+      "name": "Deep Research",
+      "description": "Thorough multi-source research on technical topics using web searches, documentation, and code analysis.",
+      "category": "productivity",
+      "source": "https://github.com/jezweb/claude-skills",
+      "author": "jezweb",
+      "tags": ["research", "analysis", "documentation", "investigation"]
+    },
+    {
+      "id": "cloudflare-worker-builder",
+      "name": "Cloudflare Worker Builder",
+      "description": "Scaffold and build Cloudflare Workers with proper configuration, bindings, and deployment for edge computing.",
+      "category": "devops",
+      "source": "https://github.com/jezweb/claude-skills",
+      "author": "jezweb",
+      "tags": ["cloudflare", "workers", "edge", "serverless"]
+    },
+    {
+      "id": "d1-drizzle-schema",
+      "name": "D1 Drizzle Schema",
+      "description": "Create and manage Cloudflare D1 database schemas using Drizzle ORM with proper migrations and type-safe queries.",
+      "category": "backend",
+      "source": "https://github.com/jezweb/claude-skills",
+      "author": "jezweb",
+      "tags": ["database", "drizzle", "d1", "schema"]
+    },
+    {
+      "id": "aws-skills",
+      "name": "AWS Skills",
+      "description": "CDK best practices, cost optimization patterns, and serverless architecture guidance for AWS development.",
+      "category": "devops",
+      "source": "https://github.com/zxkane/aws-skills",
+      "author": "zxkane",
+      "tags": ["aws", "cdk", "serverless", "cloud"]
+    },
+    {
+      "id": "expo-skills",
+      "name": "Expo Skills",
+      "description": "Official skills from the Expo team for building, deploying, and debugging Expo/React Native apps.",
+      "category": "development",
+      "source": "https://github.com/expo/skills",
+      "author": "expo",
+      "tags": ["expo", "react-native", "mobile", "deployment"]
+    },
+    {
+      "id": "k8s-troubleshooting",
+      "name": "Kubernetes Troubleshooting",
+      "description": "Systematic Kubernetes troubleshooting for pod failures, cluster issues, and performance problems with playbooks.",
+      "category": "devops",
+      "source": "https://github.com/ahmedasmar/devops-claude-skills",
+      "author": "ahmedasmar",
+      "tags": ["kubernetes", "troubleshooting", "incident-response", "devops"]
+    },
+    {
+      "id": "cicd-pipelines",
+      "name": "CI/CD Pipeline Templates",
+      "description": "CI/CD pipeline templates for Node.js, Python, Go, and Docker across GitHub Actions and GitLab CI.",
+      "category": "devops",
+      "source": "https://github.com/ahmedasmar/devops-claude-skills",
+      "author": "ahmedasmar",
+      "tags": ["cicd", "github-actions", "gitlab-ci", "pipelines"]
+    },
+    {
+      "id": "aws-cost-optimization",
+      "name": "AWS Cost Optimization",
+      "description": "Find unused AWS resources, analyze Reserved Instance opportunities, detect cost anomalies, and implement FinOps.",
+      "category": "devops",
+      "source": "https://github.com/ahmedasmar/devops-claude-skills",
+      "author": "ahmedasmar",
+      "tags": ["aws", "cost-optimization", "finops", "cloud"]
+    },
+    {
+      "id": "monitoring-observability",
+      "name": "Monitoring & Observability",
+      "description": "Production-ready Prometheus alerts, OpenTelemetry configs, and incident runbooks for apps and Kubernetes.",
+      "category": "devops",
+      "source": "https://github.com/ahmedasmar/devops-claude-skills",
+      "author": "ahmedasmar",
+      "tags": ["prometheus", "opentelemetry", "monitoring", "observability"]
+    },
+    {
+      "id": "devops-terraform-iac",
+      "name": "DevOps Terraform IaC",
+      "description": "Creating, validating, troubleshooting, and managing Terraform configurations, modules, and state files.",
+      "category": "devops",
+      "source": "https://github.com/ahmedasmar/devops-claude-skills",
+      "author": "ahmedasmar",
+      "tags": ["terraform", "infrastructure-as-code", "validation"]
+    },
+    {
+      "id": "software-architecture",
+      "name": "Software Architecture",
+      "description": "Design patterns including Clean Architecture, SOLID principles, and domain-driven design implementation.",
+      "category": "architecture",
+      "source": "https://github.com/NeoLabHQ/context-engineering-kit",
+      "author": "NeoLabHQ",
+      "tags": ["architecture", "solid", "clean-architecture", "ddd"]
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "description": "Well-known prompt engineering techniques and patterns including Anthropic best practices for LLM interaction.",
+      "category": "ai",
+      "source": "https://github.com/NeoLabHQ/context-engineering-kit",
+      "author": "NeoLabHQ",
+      "tags": ["prompts", "engineering", "techniques", "best-practices"]
+    },
+    {
+      "id": "understand-anything",
+      "name": "Understand Anything",
+      "description": "Turn any codebase into an interactive knowledge graph with visual exploration and change impact analysis.",
+      "category": "architecture",
+      "source": "https://github.com/Lum1104/Understand-Anything",
+      "author": "Lum1104",
+      "tags": ["knowledge-graph", "visualization", "architecture", "exploration"]
+    },
+    {
+      "id": "agile-pipeline",
+      "name": "Agile Delivery Pipeline",
+      "description": "Full Agile lifecycle from scope decomposition to epics, stories, tasks, execution, and quality gates.",
+      "category": "productivity",
+      "source": "https://github.com/levnikolaevich/claude-code-skills",
+      "author": "levnikolaevich",
+      "tags": ["agile", "pipeline", "project-management", "kanban"]
+    },
+    {
+      "id": "codebase-auditor",
+      "name": "Codebase Auditor",
+      "description": "Run 9 parallel auditors covering security, build, code principles, dependencies, dead code, and observability.",
+      "category": "code-quality",
+      "source": "https://github.com/levnikolaevich/claude-code-skills",
+      "author": "levnikolaevich",
+      "tags": ["audit", "code-quality", "security", "dependencies"]
+    },
+    {
+      "id": "project-bootstrap",
+      "name": "Project Bootstrap",
+      "description": "Full project scaffolding: Clean Architecture structure, Docker, CI/CD, linters, pre-commit hooks, health checks.",
+      "category": "devops",
+      "source": "https://github.com/levnikolaevich/claude-code-skills",
+      "author": "levnikolaevich",
+      "tags": ["scaffold", "bootstrap", "docker", "cicd"]
+    },
+    {
+      "id": "documentation-pipeline",
+      "name": "Documentation Pipeline",
+      "description": "Complete docs generation in one command: CLAUDE.md, requirements, architecture, API specs, and test strategy.",
+      "category": "documentation",
+      "source": "https://github.com/levnikolaevich/claude-code-skills",
+      "author": "levnikolaevich",
+      "tags": ["docs", "architecture", "api-spec", "automation"]
+    },
+    {
+      "id": "hex-graph-knowledge",
+      "name": "Hex-Graph Code Knowledge Graph",
+      "description": "Index codebase into SQLite graph via tree-sitter AST. Find references, cycles, clones, unused exports.",
+      "category": "architecture",
+      "source": "https://github.com/levnikolaevich/claude-code-skills",
+      "author": "levnikolaevich",
+      "tags": ["knowledge-graph", "tree-sitter", "sqlite", "analysis"]
+    },
+    {
+      "id": "security-auditor",
+      "name": "Security Auditor",
+      "description": "Structured security audits on npm dependencies with CVE classification, severity ranking, and remediation reports.",
+      "category": "security",
+      "source": "https://github.com/wrsmith108/claude-skill-security-auditor",
+      "author": "wrsmith108",
+      "tags": ["npm-audit", "cve", "dependencies", "security"]
+    },
+    {
+      "id": "n8n-skills",
+      "name": "n8n Workflow Skills",
+      "description": "Directly understand, create, and operate n8n automation workflows for complex integrations.",
+      "category": "devops",
+      "source": "https://github.com/haunchen/n8n-skills",
+      "author": "haunchen",
+      "tags": ["n8n", "automation", "workflows", "integration"]
+    },
+    {
+      "id": "skill-seekers",
+      "name": "Skill Seekers",
+      "description": "Automatically convert any documentation website into a Claude AI skill with proper SKILL.md format.",
+      "category": "productivity",
+      "source": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "author": "yusufkaraaslan",
+      "tags": ["docs-to-skill", "automation", "conversion", "meta"]
+    },
+    {
+      "id": "deep-research-enterprise",
+      "name": "Enterprise Deep Research",
+      "description": "8-phase research pipeline with source credibility scoring (0-100) and graph-of-thoughts reasoning.",
+      "category": "ai",
+      "source": "https://github.com/199-biotechnologies/claude-deep-research-skill",
+      "author": "199-biotechnologies",
+      "tags": ["deep-research", "credibility-scoring", "validation"]
+    },
+    {
+      "id": "deep-research-hitl",
+      "name": "Deep Research (Human-in-the-Loop)",
+      "description": "Two-phase structured research with outline generation and deep investigation for academic/technical/market research.",
+      "category": "ai",
+      "source": "https://github.com/Weizhena/Deep-Research-skills",
+      "author": "Weizhena",
+      "tags": ["deep-research", "human-in-the-loop", "academic"]
+    },
+    {
+      "id": "academic-research-pipeline",
+      "name": "Academic Research Pipeline",
+      "description": "Full academic pipeline: 13-agent research team, 12-agent paper writing, multi-perspective peer review with quality rubrics.",
+      "category": "documentation",
+      "source": "https://github.com/Imbad0202/academic-research-skills",
+      "author": "Imbad0202",
+      "tags": ["academic", "paper-writing", "peer-review", "latex"]
+    },
+    {
+      "id": "rails-audit",
+      "name": "Rails Audit (thoughtbot)",
+      "description": "Comprehensive code audits of Ruby on Rails apps based on thoughtbot's Ruby Science and Testing Rails best practices.",
+      "category": "code-quality",
+      "source": "https://github.com/thoughtbot/rails-audit-thoughtbot",
+      "author": "thoughtbot",
+      "tags": ["rails", "ruby", "code-audit", "best-practices"]
+    },
+    {
+      "id": "move-code-quality",
+      "name": "Move Code Quality",
+      "description": "Analyze Move language packages against the official Move Book Code Quality Checklist for blockchain development.",
+      "category": "code-quality",
+      "source": "https://github.com/1NickPappas/move-code-quality-skill",
+      "author": "1NickPappas",
+      "tags": ["move", "blockchain", "code-quality", "sui"]
+    },
+    {
+      "id": "pypict-testing",
+      "name": "PICT Combinatorial Testing",
+      "description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) methodology.",
+      "category": "testing",
+      "source": "https://github.com/omkamal/pypict-claude-skill",
+      "author": "omkamal",
+      "tags": ["pict", "combinatorial", "test-design", "pairwise"]
+    },
+    {
+      "id": "de-ai-text-humanizer",
+      "name": "De-AI Text Humanizer",
+      "description": "Transform AI-sounding text into human, authentic writing while preserving meaning and factual accuracy.",
+      "category": "productivity",
+      "source": "https://github.com/glebis/claude-skills",
+      "author": "glebis",
+      "tags": ["writing", "humanize", "text", "editing"]
+    },
+    {
+      "id": "notebooklm-integration",
+      "name": "NotebookLM Integration",
+      "description": "CLI and Python API wrapper for Google NotebookLM: manage notebooks, sources, and generate podcasts/slides.",
+      "category": "ai",
+      "source": "https://github.com/glebis/claude-skills",
+      "author": "glebis",
+      "tags": ["notebooklm", "google", "research", "notebooks"]
+    },
+    {
+      "id": "langsmith-fetch",
+      "name": "LangSmith Fetch",
+      "description": "Debug LangChain and LangGraph agents by automatically fetching execution traces from LangSmith.",
+      "category": "debugging",
+      "source": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "author": "OthmanAdi",
+      "tags": ["langchain", "langsmith", "debugging", "traces"]
+    },
+    {
+      "id": "shopify-development",
+      "name": "Shopify Development",
+      "description": "Build Shopify apps, extensions, and themes using GraphQL/REST APIs, Shopify CLI, and Polaris UI.",
+      "category": "frontend",
+      "source": "https://github.com/mrgoonie/claudekit-skills",
+      "author": "mrgoonie",
+      "tags": ["shopify", "ecommerce", "graphql", "polaris"]
+    },
+    {
+      "id": "payment-integration",
+      "name": "Payment Integration",
+      "description": "Comprehensive payment integration for Stripe, Paddle, Polar with webhook verification and subscription management.",
+      "category": "backend",
+      "source": "https://github.com/mrgoonie/claudekit-skills",
+      "author": "mrgoonie",
+      "tags": ["payments", "stripe", "subscriptions", "webhooks"]
+    },
+    {
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking",
+      "description": "Systematic problem-solving through iterative reasoning with revision and branching for complex tasks.",
+      "category": "ai",
+      "source": "https://github.com/mrgoonie/claudekit-skills",
+      "author": "mrgoonie",
+      "tags": ["reasoning", "problem-solving", "iterative", "branching"]
+    },
+    {
+      "id": "command-suite-security",
+      "name": "Security Audit Suite",
+      "description": "Professional security auditing commands with structured vulnerability scanning and remediation workflows.",
+      "category": "security",
+      "source": "https://github.com/qdhenry/Claude-Command-Suite",
+      "author": "qdhenry",
+      "tags": ["security-audit", "vulnerability-scan", "workflows"]
+    },
+    {
+      "id": "command-suite-architecture",
+      "name": "Architecture Review Suite",
+      "description": "Architectural analysis covering cloud architecture, database administration, and infrastructure review patterns.",
+      "category": "architecture",
+      "source": "https://github.com/qdhenry/Claude-Command-Suite",
+      "author": "qdhenry",
+      "tags": ["architecture", "review", "cloud", "database"]
+    },
+    {
+      "id": "feature-development-workflow",
+      "name": "Feature Development Workflow",
+      "description": "Multi-agent orchestration workflow coordinating complex multi-step feature development across domains.",
+      "category": "development",
+      "source": "https://github.com/wshobson/commands",
+      "author": "wshobson",
+      "tags": ["feature-development", "workflow", "orchestration"]
+    },
+    {
+      "id": "doctorg-health",
+      "name": "DoctorG Health Research",
+      "description": "Evidence-based health research using tiered trusted sources with GRADE-inspired evidence ratings and Apple Health data.",
+      "category": "data",
+      "source": "https://github.com/glebis/claude-skills",
+      "author": "glebis",
+      "tags": ["health", "evidence-based", "apple-health", "research"]
+    },
+    {
+      "id": "agent-browser",
+      "name": "Agent Browser",
+      "description": "Browser automation skill for web testing, form filling, screenshots, and data extraction via agent-browser CLI.",
+      "category": "testing",
+      "source": "https://github.com/vincenthopf/My-Claude-Code",
+      "author": "vincenthopf",
+      "tags": ["browser-automation", "web-testing", "screenshots"]
+    },
+    {
+      "id": "skill-from-masters",
+      "name": "Skill From Masters",
+      "description": "Framework for creating high-quality skills based on expert methodologies enabling systematic skill development.",
+      "category": "productivity",
+      "source": "https://github.com/vincenthopf/My-Claude-Code",
+      "author": "vincenthopf",
+      "tags": ["skill-creation", "methodology", "framework"]
+    }
+  ]
+}

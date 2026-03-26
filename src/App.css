@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ──────────────────────────────────────────────────── */
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Claude-style typography: Inter UI, Source Serif 4 body */
+h1, h2, h3, h4, h5, h6, button, a, nav, label {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+p, .code-block {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+::selection {
+  background: rgba(217, 119, 87, 0.3);
+  color: #faf9f5;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333331;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444440;
+}
+
+/* ─── Toggle Switch ─────────────────────────────────────────── */
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #333331;
+  border-radius: 11px;
+  transition: background 200ms ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background: #7a7870;
+  border-radius: 50%;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background: rgba(217, 119, 87, 0.3);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(18px);
+  background: #d97757;
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+  box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.4);
+}
+
+/* ─── Transitions ───────────────────────────────────────────── */
+
+.fade-in {
+  animation: fadeIn 200ms ease forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 200ms ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ─── Card Effects ──────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  border-color: #444440;
+}
+
+/* ─── Tauri Window Drag ─────────────────────────────────────── */
+
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* ─── Code Block ────────────────────────────────────────────── */
+
+.code-block {
+  background: #141413;
+  border: 1px solid #2a2a28;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #b0aea5;
+  tab-size: 2;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ─── Pill / Badge ──────────────────────────────────────────── */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-family: "Inter", -apple-system, sans-serif;
+}
