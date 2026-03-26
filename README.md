@@ -30,6 +30,13 @@ Claude Code skills are powerful but hard to manage. They live as scattered `SKIL
 
 **Skiller fixes all of that.** A native macOS desktop app that gives you a dashboard to manage, discover, and install Claude Code skills — like VS Code extensions, but for Claude.
 
+<p align="center">
+  <img src="docs/screenshots/all-skills.png" width="720" alt="Skiller — All Skills view" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/community.png" width="720" alt="Skiller — Community Skills view" />
+</p>
+
 ## Features
 
 **Skill Management**
@@ -163,7 +170,8 @@ skiller/
 │       └── SearchBar.tsx        # Debounced search input
 ├── bundled-skills/
 │   └── manifest.json           # 100 curated skill definitions
-└── problems.md                 # Research: skill management pain points
+└── docs/
+    └── screenshots/            # App screenshots
 ```
 
 ### Tech Stack
@@ -202,17 +210,6 @@ cargo test
 - Foreign key cascading deletes
 - Bundled manifest integrity (100 skills, valid categories, unique IDs)
 - App state aggregation
-
-## Problems This Solves
-
-See [problems.md](problems.md) for the full research. Key issues addressed:
-
-- **No UI to manage skills** → Dashboard with toggles
-- **No easy enable/disable** → One-click toggle via vault move
-- **Context bloat from too many skills** → Activate only what you need
-- **No skill discovery** → 14 audited repos, hundreds of skills browsable
-- **No debugging visibility** → View frontmatter, content, metadata
-- **Skills vs commands confusion** → Unified view of everything
 
 ## License
 
